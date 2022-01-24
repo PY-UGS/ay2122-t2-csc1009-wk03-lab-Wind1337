@@ -7,7 +7,6 @@ public class Main {
         double annualInterestRate;
         int numberOfYears;
         double loanAmount;
-        Date loanDate = new Date();
 
         Scanner input = new Scanner(System.in);
         System.out.print("Enter annual interest rate, for example, 8.25: ");
@@ -19,7 +18,7 @@ public class Main {
 
         Loan loan1 = new Loan(annualInterestRate, numberOfYears, loanAmount);
 
-        System.out.print("The loan was created on " + loanDate);
+        System.out.print("The loan was created on " + loan1.getLoanDate());
         System.out.format("%nThe monthly payment is %.2f", loan1.getMonthlyPayment());
         System.out.format("%nThe total payment is %.2f", loan1.getTotalPayment());
     }

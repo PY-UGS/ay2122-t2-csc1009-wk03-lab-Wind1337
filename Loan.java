@@ -8,13 +8,17 @@ public class Loan {
     private Date loanDate;
 
     public Loan(){
-
+        this.annualInterestRate = 2.5;
+        this.numberOfYears = 1;
+        this.loanAmount = 1000;
+        this.loanDate = new Date();
     }
 
     public Loan(double annualInterestRate, int numberOfYears, double loanAmount){
         this.annualInterestRate = annualInterestRate;
         this.numberOfYears = numberOfYears;
         this.loanAmount = loanAmount;
+        this.loanDate = new Date();
     }
 
     public double getAnnualInterestRate() {
